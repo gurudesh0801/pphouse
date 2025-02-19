@@ -1,29 +1,55 @@
 .hero-section {
+  position: relative;
   padding: 100px 0;
-  background: #f8f9fa;
   text-align: center;
-  opacity: 1; /* Ensures visibility */
+  opacity: 1;
+  overflow: hidden;
 }
 
+/* Falling stars container */
+.falling-stars-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Individual falling stars */
+.falling-star {
+  position: absolute;
+  top: -50px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 110px 30px white;
+}
+
+/* Hero Text */
 .hero-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #222;
-  opacity: 1;
+  color: #fff;
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #007bff, #6610f2);
+  background: linear-gradient(90deg, #6fb5ff, #6610f2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Arsenal SC", serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .hero-text {
   font-size: 1.2rem;
-  color: #555;
+  color: #ddd;
   margin-top: 15px;
 }
 
+/* Hero Button */
 .hero-btn {
   display: inline-block;
   padding: 12px 24px;
@@ -40,6 +66,7 @@
   background: #0056b3;
 }
 
+/* Image Wrapper */
 .image-wrapper {
   display: flex;
   justify-content: center;
