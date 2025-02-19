@@ -51,7 +51,7 @@ const Hero = () => {
     // Falling stars animation
     starsRef.current.forEach((star, i) => {
       const delay = Math.random() * 5; // Random delay before falling
-      const duration = 10 + Math.random() * 1; // Slower fall speed (10 to 15 seconds)
+      const duration = 13 + Math.random() * 7; // Slower fall speed (10 to 15 seconds)
 
       gsap.fromTo(
         star,
